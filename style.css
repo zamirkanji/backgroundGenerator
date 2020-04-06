@@ -1,0 +1,57 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+.body-container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	background: linear-gradient(to right, red, yellow);
+}
+
+h1 {
+	font-weight: 600;
+	font-family: "raleway", sans-serif;
+	/* 	border: 1px solid black; */
+	/* 	padding: 5px; */
+	letter-spacing: 2px;
+	width: 60%;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+p {
+	font-weight: 400;
+	font-family: "raleway", sans-serif;
+	letter-spacing: 2px;
+}
+
+.inputs {
+	flex-direction: row;
+	margin: 5px;
+	/* 	border: 1px solid black; */
+}
+
+.color1 {
+	margin: 10px;
+}
+
+.color2 {
+	margin: 10px;
+}
+
+h2 {
+	font-weight: 900;
+	font-family: "Raleway", sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
