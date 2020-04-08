@@ -33,14 +33,22 @@ function matchGradient() {
 // the idea of setting up an event listener and calling the function part is done....that was super easy. just gotta figure out the random numbers/ alphabet???
 
 function hexString() {
-  let r = Math.random().toString(16).substring(9);
-  let z = Math.random().toString(16).substring(9);
-  // console.log(r);
-  let hexleft = "#" + r;
-  let hexRight = "#" + z;
-  console.log(hexleft, hexRight);
-  let leftColor = color1.value = hexleft;
-  let rightColor = color2.value = hexRight;
+  // let r = Math.random().toString(16).substring(9);
+  let r = "#" + (Math.random() * 0xFFFFFF << 0).toString(16);
+  // let z = Math.random().toString(16).substring(9);
+  let z = "#" + (Math.random() * 0xFFFFFF << 0).toString(16);
+
+  let leftColor = color1.value = r;
+  let rightColor = color2.value = z;
+
+  // let hexleft = "#" + r;
+  // let hexRight = "#" + z;
+
+  console.log(r, z);
+
+  // let leftColor = color1.value = hexleft;
+  // let rightColor = color2.value = hexRight;
+
   bodyContainer.style.background =
     "linear-gradient(to right, " + leftColor + ", " + rightColor + ")";
   css.textContent = bodyContainer.style.background + ";";
